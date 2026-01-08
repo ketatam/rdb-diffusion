@@ -1,0 +1,46 @@
+[build-system]
+requires = ["flit_core >=3.7,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "rdbdiff"
+version = "1.0"
+description = "Joint Relational Database Generation via Graph-Conditional Diffusion Models"
+authors = [{ name = "Mohamed Amine Ketata", email = "a.ketata@tum.de" }]
+dependencies = [
+    # PyTorch etc.
+    "torch == 2.5.1",
+
+    # General science & ml
+    "numpy",
+    "scipy",
+    "scikit-learn",
+    "pandas",
+
+    # Plotting & visualization
+    "matplotlib",
+
+    # logging
+    "wandb",
+
+    # Utilities
+    "tqdm",
+    "rich",
+    "ipython",
+    "ipdb",
+    "jupyterlab",
+    "ipympl",
+
+    # other dependencies
+    "relbench[full]",
+    "pre-commit",
+    "sdv",
+]
+requires-python = ">= 3.11"
+license = { text = "MIT" }
+
+[tool.ruff]
+line-length = 90
+
+[tool.ruff.lint.isort]
+known-third-party = ["wandb"]

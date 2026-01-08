@@ -1,0 +1,19 @@
+# Python artifacts
+__pycache__
+*.egg-info
+
+# ML stuff
+#/data
+/logs
+/checkpoints
+wandb
+.hydra
+outputs
+multirun
+lightning_logs
+*.pickle
+.ipynb_checkpoints/
+
+# project-specific
+/rdbdiff_workspace
+/seml

@@ -1,0 +1,1 @@
+{"country": {"size": 35, "type": "discrete"}, "lat": {"size": 77, "type": "continuous"}, "lng": {"size": 77, "type": "continuous"}}
