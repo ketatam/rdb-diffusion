@@ -76,7 +76,7 @@ Another sampling hyperparameter which can be changed to sample from the same tra
 
 Note that if you run the same command with the same sampling hyperparameters twice, the sampling will also be skipped and only the evaluation is performed again. If you want to sample again, you need to manually delete the folder containing the sampled database (e.g. `synthetic_data_sampled_structure_size_multiplier_1.0` or `synthetic_data_real_structure`).
 
-### Reducing runtime and memory conusmption
+### Reducing runtime and memory consumption
 The default hyperparameters were chosen to ensure a fair comparison with the baselines. However, we found in our experiments that our model can be made smaller and faster without affecting the final performance too much. For this, we primarily recommend reducing the diffusion timesteps (the `num_timesteps` argument) from 2000 to 1000 or 500 as well as using shallower MLPs in the denoiser, by using a smaller `d_layers` argument, e.g. [512, 1024, 512].
 
 ### Using you own database
